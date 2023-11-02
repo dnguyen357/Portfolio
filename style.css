@@ -8,6 +8,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    margin:0;
 }
 
 html{
@@ -410,6 +411,7 @@ section{
 @media  screen  and (max-width:1400px){
     #profile{
         height: 70vh;
+        margin-bottom: 6rem;
     }
     .about-container{
         flex-wrap: wrap;
@@ -447,7 +449,6 @@ section{
     }
     #mobile-nav{
         display:flex;
-
     }
     #profile{
         margin-bottom: 10rem;
@@ -455,40 +456,131 @@ section{
     #skills,.skills_details_container{
         margin-top: 2rem;
     }
-    #profile,.about_container{
+    #profile,.about_container,.details-container_block{
         display:block;
+    }
+    section,.about_container,.details-container_block{
+        height: fit-content;
+    }
+    section{
+        margin:0 5%;
     }
     .profile_pic{
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
     }
+    .about_pic_container{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
 
 }
-@media  screen  and (max-width:800px){
-    #desktop-nav{
-        display: none;
+@media screen and (max-width: 850px) {
+    section{
+         margin:0 5%;
     }
-    #mobile-nav{
-        display:flex;
-
+    .about_container{
+         align-items: center;
+    }
+    .about_pic{
+         width: 200px;
+         height: 200px;
+         margin: 0 auto 2rem;
+     }
+     #profile{
+         height: 70vh;
+         margin-bottom: 6rem;
+     }
+     .profile_p1{
+         text-align: center;
+         font-size: 1rem;
+         margin-bottom: .5rem;
+     }
+     .profile_p2{
+         text-align: center;
+         font-size: 1.5rem;
+         margin-bottom: 1rem;
+     }
+     .name{
+         font-size: 2rem;
+         text-align: center;
+     }
+     #mobile_nav{
+         width: 100%;
+     }
+     .skills_details{
+         flex-direction: column;
+     }
+     .details-container_block{
+        
+     }
+     .project_title{
+         font-size: 1.2rem;
+     }
+     .single_details_container ul li{
+         font-size: 1rem;
+         text-align: left;
+         
+     }
+     .single_details_container{
+         padding: 1rem;
+         width: 300px;
+         margin-bottom: 2rem;
+     }
+   }
+@media screen and (max-width: 600px) {
+   section{
+        margin:0 5%;
+   }
+   .about_container{
+        align-items: center;
+   }
+   .about_pic{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 2rem;
     }
     #profile{
-        margin-bottom: 10rem;
+        height: 83vh;
+        margin-bottom:10rem;
     }
-    #skills,.skills_details_container{
-        margin-top: 2rem;
+    .profile_p1{
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: .5rem;
     }
-    #profile,.about_container{
-        display:block;
+    .profile_p2{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
-    .profile_pic{
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
+    .name{
+        font-size: 2rem;
+        text-align: center;
+    }
+    #mobile_nav{
+        width: 100%;
     }
     .skills_details{
         flex-direction: column;
     }
-
-}
+    .details-container_block{
+       
+    }
+    .project_title{
+        font-size: 1.2rem;
+    }
+    .single_details_container ul li{
+        font-size: 1rem;
+        text-align: left;
+        
+    }
+    .single_details_container{
+        padding: 1rem;
+        width: 300px;
+        margin-bottom: 2rem;
+    }
+  }
