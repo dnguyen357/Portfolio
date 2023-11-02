@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo" onclick="window.location = '/'">Dao Nguyen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="mobile-nav">
+      <div class="logo">Dao Nguyen</div>
+      <div class="mobile-nav-links">
+        <div id="nav-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="profile_pic">
+        <img src="./assets/IMG_0469.jpg" alt="Dao Nguyen picture" />
+      </div>
+      <div class="profile_text">
+        <p class="profile_p1">Hello, I'm</p>
+        <h1 class="name">Dao Nguyen</h1>
+        <p class="profile_p2">a Software Engineer</p>
+        <div class="profile_btn">
+          <button
+            class="btn_resume"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Resume
+          </button>
+        </div>
+        <div class="profile_socials">
+          <img
+            src="./assets/github.png"
+            alt="github"
+            class="icon"
+            onclick="location.href='https://github.com/dnguyen357/'"
+          />
+          <img
+            src="./assets/linkedin.png"
+            alt="github"
+            class="icon"
+            onclick="location.href='https://github.com/dnguyen357?tab=repositories'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="about_p1">About Me</p>
+      <div class="about_container">
+        <div class="about_pic_container">
+          <img
+            src="./assets/IMG_0469.jpg"
+            alt="Dao Nguyen picture"
+            class="about_pic"
+          />
+        </div>
+        <div class="about_details">
+          <div class="about_details_container">
+            <div
+              class="details_container"
+              onclick="window.open('./assets/certificate.pdf')"
+            >
+              <img
+                src="./assets/certificate.png"
+                alt="certificate"
+                class="icon"
+              />
+              <h3>Certificate</h3>
+              <p>
+                Web Development Bootcamp <br />
+                Fullstack Academy
+              </p>
+            </div>
+            <div
+              class="details_container"
+              onclick="window.open('./assets/Diploma.pdf')"
+            >
+              <img src="./assets/education.png" alt="graduate" class="icon" />
+              <h3>Education</h3>
+              <p>
+                B.S. Computer Engineering<br />
+                Drexel University
+              </p>
+            </div>
+          </div>
+          <div class="about_text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <p class="skills_p1">Skills</p>
+      <div class="skills_details_container">
+        <div class="skills_details">
+          <div class="details_container">
+            <h2 class="skills-h2">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML5</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS3</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details_container">
+            <h2 class="skills-h2">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1 class="projects_h1">Projects</h1>
+      <div class="projects_details_container">
+        <div class="details-container_block">
+          <div class="single_details_container">
+            <h2 class="project_title">E-Commerce Website Frontend</h2>
+            <ul>
+              <li>Users can view all products.</li>
+              <li>Products canbe sorted based on various characteristics.</li>
+              <li>
+                Logged-in users can add items to cart, and flexibility to make
+                changes to their cart.
+              </li>
+              <li>
+                Also, they can revisit the website and pickup where they off.
+              </li>
+            </ul>
+            <div class="btn_container">
+              <button
+                class="btn_projects"
+                onclick="location.href='https://github.com/dnguyen357/Shop_Website_FrontEnd'"
+              >
+                Github
+              </button>
+              <button
+                class="btn_projects"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="single_details_container">
+            <h2 class="project_title">E-Commerce Website Backend</h2>
+            <ul>
+              <li>
+                Developed a set of RESTful for connecting to MongoDB in
+                Express.js and Node.js.
+              </li>
+              <li>
+                Implemented user authentication and authorization to ensure
+                secure access to user-specific features, such as the shopping
+                cart.
+              </li>
+              <li>Hosted and deployed REST API on Render.</li>
+            </ul>
+            <div class="btn_container">
+              <button
+                class="btn_projects"
+                onclick="location.href='https://github.com/dnguyen357/Shop_Website_BackEnd'"
+              >
+                Github
+              </button>
+              <button
+                class="btn_projects"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
